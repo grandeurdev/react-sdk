@@ -1,5 +1,5 @@
 {
-  "name": "apollo-react",
+  "name": "@grandeurcloud/apollo-react",
   "version": "0.1.2",
   "description": "Build amazing react apps with Grandeur Cloud as your backend",
   "author": "Grandeur Technologies <hi@grandeur.tech>",
