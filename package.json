@@ -2,18 +2,14 @@
   "name": "@grandeurcloud/apollo-react",
   "version": "0.1.0",
   "description": "Build amazing react apps with Grandeur Cloud as your backend",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
   "dependencies": {
-    "@grandeurcloud/apollo": "^1.0.0",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1"
+    "@grandeurcloud/apollo": "^1.0.0"
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/apollo --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -49,5 +45,16 @@
   "bugs": {
     "url": "https://github.com/grandeurtech/grandeurcloud-react-sdk/issues"
   },
-  "homepage": "https://grandeur.tech"
+  "homepage": "https://grandeur.tech",
+  "devDependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react-scripts": "3.4.1",
+    "@babel/cli": "^7.10.1"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
 }
