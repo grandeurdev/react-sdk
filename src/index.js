@@ -1,29 +1,13 @@
-// Main file to test the
-// Grandeur Cloud React Component
+// The Grandeur Cloud React SDK
+// This is where the revolution is gonna happen
+// It will act as an interface to JS SDK and will 
+// provide interface so that developers can use
+// Grandeur Cloud in their React Applications
 
-// Import react libraries
-import React from "react";
-import ReactDOM from "react-dom";
+// Import Component and Wrapper
+import Apollo from './lib/apollo.component';
+import withApollo from './lib/apollo.wrapper';
 
-// Import sample component
-import App from './app';
-
-// Import Grandeur Cloud SDK
-import Apollo from './apollo/index';
-
-// Apollo Config
-const accessCredential = {
-    accessKey: "YOUR-ACCESS-KEY",
-    accessToken: "YOUR-ACCESS-TOKEN"
-  }
-  
-
-// Wrap the app compoennt into Apollo Component
-const page = (
-    <Apollo apiKey="YOUR-APIKEY" accessCredential={accessCredential}>
-        <App />
-    </Apollo> 
-)
-
-// Render
-ReactDOM.render(page, document.getElementById("root"));
+// Export
+export {Apollo};
+export {withApollo};
