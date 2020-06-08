@@ -5,8 +5,8 @@
 // Grandeur Cloud in their React Applications
 
 // Import Component and Wrapper
-import Apollo from './src/apollo.component';
-import withApollo from './src/apollo.wrapper';
+import Apollo from './apollo.component';
+import withApollo from './apollo.wrapper';
 
 
 // Export
