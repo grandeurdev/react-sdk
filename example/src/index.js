@@ -8,9 +8,15 @@ import App from './app'
 // and Import Apollo
 import {Apollo} from 'apollo-react';
 
+// Access Credential
+var accessCredential = {
+    accessKey: "ACCESS-KEY",
+    accessToken: "ACCESS-TOKEN"
+}
+
 // Render app
 const page = (
-    <Apollo apiKey="YOUR-APIKEY" accessCredential={{accessKey: "ACCESS-KEY", accessToken: "ACCESS-TOKEN"}}>
+    <Apollo apiKey="API-KEY" accessCredential={accessCredential}>
         {/* App */}
         <App />
     </Apollo>

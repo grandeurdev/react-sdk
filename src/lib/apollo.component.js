@@ -32,32 +32,15 @@ class ApolloComponent extends Component {
     // Constructor
     constructor(props) {
         super(props);
+    
+        // init
+        var apolloProject = init(this.props.apiKey, this.props.accessCredential.accessKey, this.props.accessCredential.accessToken);
 
-        // State
+        // and set State
         this.state = {
-            apiKey: null,
-            accessKey: null,
-            accessToken: null
+            apolloProject: apolloProject
         };
-    }
 
-    // Get the Props
-    static getDerivedStateFromProps(props, State) {
-        var accessKey = null;
-        var accessToken = null;
-
-        // Check if accessCredential provided
-        if (props.accessCredential) {
-            // Get Access Key and Token
-            accessKey = props.accessCredential.accessKey
-            accessToken = props.accessCredential.accessToken
-        }
-
-        return{
-            apiKey: props.apiKey,
-            accessKey: accessKey,
-            accessToken: accessToken
-        }
     }
 
     // Render 
@@ -65,8 +48,10 @@ class ApolloComponent extends Component {
         // Wrap the childerns into the Provider and inti the
         // context with data that we wanted to made available all
         // over the app
+
+        // Then render
         return(
-            <ApolloContext.Provider value={init(this.state.apiKey, this.state.accessKey, this.state.accessToken)} >
+            <ApolloContext.Provider value={this.state.apolloProject} >
                 {this.props.children}
             </ApolloContext.Provider>
         );
