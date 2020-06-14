@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "@grandeurcloud/apollo": "^1.0.1"
+    "@grandeurcloud/apollo": "^1.0.2"
   }
 }
