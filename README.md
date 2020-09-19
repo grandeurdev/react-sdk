@@ -70,7 +70,7 @@ Then inside your `app.js`
 import React, { Component } from 'react';
 
 // Import Apollo HOC
-import {withApollo} from 'apollo-react';
+import {withApollo} from '@grandeurcloud/apollo-react';
 
 // Component
 class App extends Component {
