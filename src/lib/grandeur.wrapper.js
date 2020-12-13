@@ -8,14 +8,14 @@
 // return in this file before exporting.
 
 import React from 'react';
-import ApolloContext from './apollo.context';
+import GrandeurContext from './grandeur.context';
 
 // Default Wrapper for Components
 // where the context is required
-const withApollo = (Component) => (props)=> (
-    <ApolloContext.Consumer>
-        {apolloProject => <Component {...props} apolloProject={apolloProject} />}
-    </ApolloContext.Consumer>
+const withGrandeur = (Component) => (props)=> (
+    <GrandeurContext.Consumer>
+        {grandeur => <Component {...props} grandeur={grandeur} />}
+    </GrandeurContext.Consumer>
 );
 
-export default withApollo;
+export default withGrandeur;

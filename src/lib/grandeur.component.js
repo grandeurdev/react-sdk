@@ -1,7 +1,7 @@
-// Apollo Component is the most important
-// part of the Grandeur Cloud SDK for react. It provides
+// Grandeur Component is the most important
+// part of the Grandeur SDK for react. It provides
 // and interface with which the app could get access
-// to the Apollo Object in the entire Application.
+// to the Grandeur Object in the entire Application.
 // All you have to do is to wrap the main component
 // of the application into the component exported 
 // through this file
@@ -19,26 +19,26 @@
 // returns a function with args as the context. 
 // To make it look cleaner. We have developed a new
 // component around the Provider and a HOC around the
-// wrapper. The main apollo component is implemented 
+// wrapper. The main grandeur component is implemented 
 // in this file.
 
 // Imports
 import React, {Component} from 'react';
-import ApolloContext from './apollo.context';
-import {init} from '@grandeurcloud/apollo';
+import GrandeurContext from './grandeur.context';
+import {init} from 'grandeur-js';
 
-// Default Apollo Provider Component
-class ApolloComponent extends Component {
+// Default Grandeur Provider Component
+class GrandeurComponent extends Component {
     // Constructor
     constructor(props) {
         super(props);
     
         // init
-        var apolloProject = init(this.props.apiKey, this.props.accessCredential.accessKey, this.props.accessCredential.accessToken);
+        var grandeur = init(this.props.apiKey, this.props.accessCredential.accessKey, this.props.accessCredential.accessToken);
 
         // and set State
         this.state = {
-            apolloProject: apolloProject
+            grandeur: grandeur
         };
 
     }
@@ -51,11 +51,11 @@ class ApolloComponent extends Component {
 
         // Then render
         return(
-            <ApolloContext.Provider value={this.state.apolloProject} >
+            <GrandeurContext.Provider value={this.state.grandeur} >
                 {this.props.children}
-            </ApolloContext.Provider>
+            </GrandeurContext.Provider>
         );
     }
 }
 
-export default ApolloComponent;
+export default GrandeurComponent;

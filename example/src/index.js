@@ -5,8 +5,8 @@ import ReactDOM from 'react-dom'
 // Import app
 import App from './app'
 
-// and Import Apollo
-import {Apollo} from 'apollo-react';
+// and Import Grandeur
+import {Grandeur} from 'grandeur-react';
 
 // Access Credential
 var accessCredential = {
@@ -16,10 +16,10 @@ var accessCredential = {
 
 // Render app
 const page = (
-    <Apollo apiKey="API-KEY" accessCredential={accessCredential}>
+    <Grandeur apiKey="API-KEY" accessCredential={accessCredential}>
         {/* App */}
         <App />
-    </Apollo>
+    </Grandeur>
 );
 
 ReactDOM.render(page, document.getElementById('root'))
