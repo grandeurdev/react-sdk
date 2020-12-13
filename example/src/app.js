@@ -5,8 +5,8 @@
 // Libraries
 import React, { Component } from 'react';
 
-// Import Apollo HOC
-import {withApollo} from 'apollo-react';
+// Import Grandeur HOC
+import {withGrandeur} from 'grandeur-react';
 
 // Component
 class App extends Component {
@@ -32,4 +32,4 @@ class App extends Component {
 }
 
 // Export the Component
-export default withApollo(App);
+export default withGrandeur(App);

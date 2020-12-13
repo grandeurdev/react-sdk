@@ -1,10 +1,10 @@
 {
-  "name": "@grandeurcloud/apollo-react",
-  "version": "0.3.3",
-  "description": "Build amazing react apps with Grandeur Cloud as your backend",
+  "name": "grandeur-react",
+  "version": "1.0.0",
+  "description": "Build amazing react apps with Grandeur as your backend",
   "author": "Grandeur Technologies <hi@grandeur.tech>",
   "license": "MIT",
-  "repository": "https://github.com/grandeurtech/grandeurcloud-react-sdk/",
+  "repository": "https://github.com/grandeurtech/react-sdk/",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "@grandeurcloud/apollo": "^1.4.2"
+    "grandeur-js": "^1.0.0"
   }
 }
