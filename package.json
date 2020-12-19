@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "grandeur-js": "^1.0.0"
+    "grandeur-js": "^1.0.1"
   }
 }
