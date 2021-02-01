@@ -1,6 +1,6 @@
 {
   "name": "grandeur-react",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Build amazing react apps with Grandeur as your backend",
   "author": "Grandeur Technologies <hi@grandeur.tech>",
   "license": "MIT",
@@ -51,6 +51,6 @@
     "dist"
   ],
   "dependencies": {
-    "grandeur-js": "^1.0.0"
+    "grandeur-js": "^1.0.3"
   }
 }
