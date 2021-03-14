@@ -35,7 +35,7 @@ class GrandeurComponent extends Component {
         super(props);
 
         // Pass the plugins to sdk
-        extend(this.props.extensions ? this.props.extensions : {});
+        extend ? extend(this.props.extensions ? this.props.extensions : {}) : null;
     
         // init
         var grandeur = init(this.props.apiKey, this.props.credentials.key, this.props.credentials.token);
