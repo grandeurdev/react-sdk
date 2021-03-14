@@ -23,18 +23,22 @@
 // in this file.
 
 // Imports
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import GrandeurContext from './grandeur.context';
-import {init} from 'grandeur-js';
+import { init, extend } from 'grandeur-js';
 
 // Default Grandeur Provider Component
 class GrandeurComponent extends Component {
     // Constructor
     constructor(props) {
+
         super(props);
+
+        // Pass the plugins to sdk
+        extend(this.props.extensions ? this.props.extensions : {});
     
         // init
-        var grandeur = init(this.props.apiKey, this.props.accessCredential.accessKey, this.props.accessCredential.accessToken);
+        var grandeur = init(this.props.apiKey, this.props.credentials.key, this.props.credentials.token);
 
         // and set State
         this.state = {
