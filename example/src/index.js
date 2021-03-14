@@ -9,14 +9,14 @@ import App from './app'
 import {Grandeur} from 'grandeur-react';
 
 // Access Credential
-var accessCredential = {
-    accessKey: "ACCESS-KEY",
-    accessToken: "ACCESS-TOKEN"
+var credentials = {
+    key: "ACCESS-KEY",
+    token: "ACCESS-TOKEN"
 }
 
 // Render app
 const page = (
-    <Grandeur apiKey="API-KEY" accessCredential={accessCredential}>
+    <Grandeur apiKey="API-KEY" credentials={credentials}>
         {/* App */}
         <App />
     </Grandeur>
