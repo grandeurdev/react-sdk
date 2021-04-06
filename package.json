@@ -1,6 +1,6 @@
 {
   "name": "grandeur-react",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "Build amazing react apps with Grandeur as your backend",
   "author": "Grandeur Technologies <hi@grandeur.tech>",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^17.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -51,6 +51,6 @@
   ],
   "dependencies": {
     "eslint": "^7.22.0",
-    "grandeur-js": "^1.0.5"
+    "grandeur-js": "^1.0.7"
   }
 }
