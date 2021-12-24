@@ -43,14 +43,14 @@ import {Grandeur} from 'grandeur-react';
 
 // Your access credential
 // you can generate it through settings page
-const accessCredential = {
-  accessKey: "ACCESS-KEY",
-  accessToken: "ACCESS-TOKEN"
+const credentials = {
+  key: "ACCESS-KEY",
+  token: "ACCESS-TOKEN"
 }
 
 // Render app
 const page = (
-    <Grandeur apiKey="YOUR-APIKEY" accessCredential={accessCredential}>
+    <Grandeur apiKey="YOUR-APIKEY" credentials={credentials}>
         {/* Your app code*/}
         <App />
     </Grandeur>
