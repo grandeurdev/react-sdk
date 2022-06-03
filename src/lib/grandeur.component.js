@@ -25,7 +25,7 @@
 // Imports
 import React, { Component } from 'react';
 import GrandeurContext from './grandeur.context';
-import { init, extend } from 'grandeur-js';
+import { grandeur } from 'grandeur-js/dist/grandeur';
 
 // Default Grandeur Provider Component
 class GrandeurComponent extends Component {
@@ -35,14 +35,14 @@ class GrandeurComponent extends Component {
         super(props);
 
         // Pass the plugins to sdk
-        extend ? extend(this.props.extensions ? this.props.extensions : {}) : null;
+        grandeur.extend ? grandeur.extend(this.props.extensions ? this.props.extensions : {}) : null;
     
         // init
-        var grandeur = init(this.props.apiKey, this.props.credentials.key, this.props.credentials.token);
+        var project = grandeur.init(this.props.apiKey, this.props.credentials.key, this.props.credentials.token);
 
         // and set State
         this.state = {
-            grandeur: grandeur
+            grandeur: project
         };
 
     }
