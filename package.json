@@ -1,6 +1,6 @@
 {
   "name": "grandeur-react",
-  "version": "1.0.9",
+  "version": "1.0.12",
   "description": "Build amazing react apps with Grandeur as your backend",
   "author": "Grandeur Technologies <hi@grandeur.tech>",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^17.0.0"
+    "react": "^18.1.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.3",
@@ -42,15 +42,15 @@
     "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^4.0.3"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "^5.0.1"
   },
   "files": [
     "dist"
   ],
   "dependencies": {
     "eslint": "^7.22.0",
-    "grandeur-js": "^1.0.9"
+    "grandeur-js": "^1.0.15"
   }
 }
