@@ -51,6 +51,6 @@
   ],
   "dependencies": {
     "eslint": "^7.22.0",
-    "grandeur-js": "^1.0.14"
+    "grandeur-js": "^1.0.15"
   }
 }

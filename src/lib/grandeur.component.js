@@ -38,7 +38,7 @@ class GrandeurComponent extends Component {
         grandeur.extend ? grandeur.extend(this.props.extensions ? this.props.extensions : {}) : null;
     
         // init
-        var project = grandeur.init(this.props.apiKey, this.props.credentials.key, this.props.credentials.token);
+        var project = grandeur.init(this.props.apiKey, this.props.secretKey);
 
         // and set State
         this.state = {
