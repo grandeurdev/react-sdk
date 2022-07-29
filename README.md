@@ -1,8 +1,8 @@
 # Grandeur
 
-[![NPM](https://img.shields.io/npm/v/@grandeurcloud/grandeur-react.svg)](https://www.npmjs.com/package/grandeur-react) 
-[![Downloads/week](https://img.shields.io/npm/dw/@grandeurcloud/grandeur-react.svg)](https://npmjs.org/package/grandeur-react)
-[![License](https://img.shields.io/npm/l/grandeur-react.svg)](https://github.com/grandeurtech/react-sdk/blob/master/package.json)
+[![NPM](https://img.shields.io/npm/v/grandeur-react.svg)](https://www.npmjs.com/package/grandeur-react) 
+[![Downloads/week](https://img.shields.io/npm/dw/grandeur-react.svg)](https://npmjs.org/package/grandeur-react)
+[![License](https://img.shields.io/npm/l/grandeur-react.svg)](https://github.com/grandeurdev/react-sdk/blob/master/package.json)
 
 Building a smart (IoT) product is an art. It is about unifying the physical world with the digital one. When you connect a hardware to the web, magic happens. But it involves development across an immense technology stack. You need to develop your hardware, your apps to monitor/control your hardware and a server backend to manage both. Then if you are (somehow) done with the development, there comes the hardest part; you will have to scale it all as your userbase gonna grow.
 
@@ -17,8 +17,6 @@ React is to be honest the big thing, it makes app development so fast and easier
 
 # Get Started
 Let us get to the point straight. You are all motivated and ready to dive in. So quickly go to [Grandeur](https://cloud.grandeur.tech/), create a new project or select a project to get the API key.
-
-![Select a project at Grandeur Dashboard](/images/select-project.jpeg)
 
 Then just simply download the package from npm and use it in your react project
 
